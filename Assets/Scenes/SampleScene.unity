@@ -1755,7 +1755,7 @@ CharacterController:
   m_Height: 3.8
   m_Radius: 0.6
   m_SlopeLimit: 45
-  m_StepOffset: 0.7
+  m_StepOffset: 0.1
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
@@ -1767,8 +1767,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1924991161}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 13.76, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -3.822, y: 0.983, z: 10.85}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
   - {fileID: 534669905}
   - {fileID: 1104340335}
@@ -1794,10 +1794,10 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 512
-  speed: 12
+  speed: 10
   sprintModifier: 1.75
   gravity: -19.62
-  jumpHeight: 3
+  jumpHeight: 2
 --- !u!1 &2091116139
 GameObject:
   m_ObjectHideFlags: 0

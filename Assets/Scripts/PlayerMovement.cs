@@ -10,10 +10,10 @@ public class PlayerMovement : MonoBehaviour
     public float groundDistance = 0.1f;
     public LayerMask groundMask; 
 
-    public float speed = 10f;
+    public float speed = 8f;
     public float sprintModifier = 1.75f;
     public float gravity = -9.81f * 2;
-    public float jumpHeight = 3f;
+    public float jumpHeight = 2f;
 
     Vector3 velocity;
     bool isGrounded;
