@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController controller;
 
     public Transform groundCheck;
-    public float groundDistance = 0.1f;
+    public float groundDistance = 0.4f;
     public LayerMask groundMask; 
 
     public float speed = 8f;
@@ -43,7 +43,6 @@ public class PlayerMovement : MonoBehaviour
             Vector3 move = transform.right * x + transform.forward * z;
             controller.Move(move * speed * Time.deltaTime);
         }
-
 
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
