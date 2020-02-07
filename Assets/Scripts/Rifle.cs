@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 
-public class Gun : MonoBehaviour
+public class Rifle : MonoBehaviour
 {
-    public float damage = 10f;
-    public float range = 100f;
-    public float impactForce = 30f;
+    public float damage = 30f;
+    public float range = 200f;
+    public float impactForce = 90f;
     public float fireRate = 10f;
 
-    public bool automatic = false;
+    public bool automatic = true;
 
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
@@ -36,7 +36,7 @@ public class Gun : MonoBehaviour
         muzzleFlash.Play();
         RaycastHit hit;
 
-        if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
             Debug.Log(hit.transform.name);
             Enemy enemy = hit.transform.GetComponent<Enemy>();
